@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prop Spawner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container" class="hidden">
+        <button id="closeButton" class="close-btn"><i class="fas fa-times"></i></button>
+        <div class="logo-title-wrapper">
+            <div id="logo"></div>
+            <h1 class="title">Prop Spawner</h1>
+        </div>
+        <div class="prop-input">
+            <input type="text" id="propName" placeholder="Enter prop name" autofocus>
+        </div>
+        <div class="prop-actions">
+            <button id="spawnButton" class="btn-with-icon"><i class="fas fa-plus"></i> <span class="hover-text">Spawn Prop</span></button>
+            
+            <button id="moveButton" class="btn-with-icon"><i class="fas fa-arrows-alt"></i> <span class="hover-text">Move Prop</span></button>
+
+            <button id="deleteButton" class="btn-with-icon"><i class="fas fa-trash"></i> <span class="hover-text">Delete Prop</span></button>
+            
+            <button id="propListButton" class="btn-with-icon"><i class="fas fa-list"></i> <span class="hover-text">Prop List</span></button>
+                     
+        </div>
+        <div id="propInfoContainer"></div>
+        <div id="propListContainer" class="hidden">
+            <ul class="propList"></ul>
+        </div>
+        
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
